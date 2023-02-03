@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --blue:#149fcb;
+    --white: white;
+    --background-shade:#f1f1f1;
+}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap");
+
+html {
+  font-size: 100%;
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+}
+
+/* Header Styling start */
+.parent-container{
+    padding: 5rem;   
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/pictures/hero.jpg);
+    height: 40vh;
+    background-size: cover;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.navbar-logo{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 99;
+}
+.navbar-logo > .navbar-image{
+
+    width: 100%;
+}
+.navbar-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.active > a{
+    border-bottom: 3px solid var(--blue);
+    color:  var(--blue)!important;
+}
+.navbar-list  a{
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.title-container {
+    color: var(--white);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.subtitle {
+    font-size: 40px;
+}
+
+/* Header styling end */
+
+/* About Section styling */
+.about-body-text{
+    padding: 1.5rem 5%;
+    background: var(--background-shade);
+}
+.about-body-text-v2{
+    padding: 1.5rem 5%;
+}
+.about-body-text-main-title{
+    color: var(--blue);
+    font-size: 30px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.img-hotel-parent-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+.img-hotel-icons-home-page img {
+    display: block;
+    margin: auto;
+}
+/* About Section styling end*/
+
+/* Experience Home Main */
+
+.experience-home-main .img-hotel-parent-icons
+{
+    padding: 0rem 5%;
+}
+.experience-home-main .img-hotel-parent-icons p{
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 17rem 0rem 0rem 1rem;
+}
+.experience-home-main .img-hotel-icons-home-page:first-child{
+height: 20rem;
+background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url(../images/pictures/Gym\ Pool.jpg);
+width: 100%;
+background-size:cover ;
+}
+.experience-home-main .img-hotel-icons-home-page:nth-child(2){
+    height: 20rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/pictures/Cooking\ with\ chef.jpg);width: 100%;
+    background-size:cover;
+}
+.experience-home-main .img-hotel-icons-home-page:nth-child(3){
+    height: 20rem;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url(../images/pictures/Lazy\ River.jpg);width: 100%;
+    background-size:cover;
+}
+.experience-home-main .img-hotel-icons-home-page:nth-child(4){
+    height: 20rem;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url(../images/pictures/Candlelight\ Dinner.jpg);width: 100%;
+    background-size:cover;
+}
+.experience-home-main .img-hotel-icons-home-page:nth-child(5){
+    height: 20rem;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url(../images/pictures/Carnival.jpg);width: 100%;
+    background-size:cover;
+}
+
+/* Experience Home Main end */
+
+/* Last Section Text */
+.last-section-image-icons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0rem 5%;
+}
+.last-section-image-icons .img-hotel-icons-home-page{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.last-section-image-icons .img-hotel-icons-home-page img{
+display: inline;
+margin: 0 0;
+}
+
+/* Last Section Text end*/
+
+/* Resort html styles */
+.room-page-text .img-hotel-parent-icons
+{
+    padding: 0rem 5%;
+}
+.room-page-text .img-hotel-parent-icons p{
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 17rem 0rem 0rem 1rem;
+}
+.room-page-text .img-hotel-icons-home-page:first-child{
+height: 20rem;
+background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url(../images/pictures/Superior_Studio.jpg);
+width: 39.9%;
+background-size:cover ;
+}
+.room-page-text .img-hotel-icons-home-page:nth-child(2){
+    height: 20rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/pictures/1br-3.jpg);width: 100%;
+    width: 39.95%;
+    background-size:cover;
+}
+/* Resort class ends */
+
+/* Inquiry Form Style */
+.form-main form{
+display: grid;
+margin: 0rem 5%;
+}
+.form-main form .input-fields{
+    width: 100%;
+    height: 4rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-width: 3px;
+}
+.input-fields::placeholder{
+padding-left: 0.5rem;
+}
+.permit{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.btn-div{
+    text-align: right;
+    margin-top: 1rem;
+}
+.submit-btn{
+    width: 12rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    border-style: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: linear-gradient(135deg, rgba(152,188,63,1) 0%, rgba(19,160,203,1) 100%);
+    color: var(--background-shade);
+}
+/* Style end Form */
